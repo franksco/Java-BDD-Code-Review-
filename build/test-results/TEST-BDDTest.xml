@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BDDTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-04-22T22:22:54" hostname="corys-MacBook-Pro.local" time="0.014">
+  <properties/>
+  <testcase name="replacement_TestForA" classname="BDDTest" time="0.005"/>
+  <testcase name="replacement_TestForE" classname="BDDTest" time="0.0"/>
+  <testcase name="replacement_TestForI" classname="BDDTest" time="0.0"/>
+  <testcase name="replacement_TestForO" classname="BDDTest" time="0.001"/>
+  <testcase name="replacement_TestForU" classname="BDDTest" time="0.001"/>
+  <testcase name="replacement_testForAllAndCaps" classname="BDDTest" time="0.001"/>
+  <testcase name="replacement_testFortesttrue" classname="BDDTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

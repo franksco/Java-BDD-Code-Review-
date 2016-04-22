@@ -27,6 +27,7 @@ public class BDD {
       String finalString = replaceLetter(sentence);
       model.put("sentence", sentence);
       model.put("finalString", finalString);
+      
 
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
