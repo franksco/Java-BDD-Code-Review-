@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BDDTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-04-22T22:22:54" hostname="corys-MacBook-Pro.local" time="0.014">
+<testsuite name="BDDTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-04-22T23:25:44" hostname="corys-MacBook-Pro.local" time="0.327">
   <properties/>
-  <testcase name="replacement_TestForA" classname="BDDTest" time="0.005"/>
-  <testcase name="replacement_TestForE" classname="BDDTest" time="0.0"/>
-  <testcase name="replacement_TestForI" classname="BDDTest" time="0.0"/>
+  <testcase name="replacement_TestForA" classname="BDDTest" time="0.002"/>
+  <testcase name="replacement_TestForE" classname="BDDTest" time="0.002"/>
+  <testcase name="replacement_TestForI" classname="BDDTest" time="0.001"/>
   <testcase name="replacement_TestForO" classname="BDDTest" time="0.001"/>
-  <testcase name="replacement_TestForU" classname="BDDTest" time="0.001"/>
-  <testcase name="replacement_testForAllAndCaps" classname="BDDTest" time="0.001"/>
-  <testcase name="replacement_testFortesttrue" classname="BDDTest" time="0.0"/>
+  <testcase name="replacement_TestForU" classname="BDDTest" time="0.002"/>
+  <testcase name="replacement_testForAllAndCaps" classname="BDDTest" time="0.003"/>
+  <testcase name="isALeapYear" classname="BDDTest" time="0.173"/>
+  <testcase name="replacement_testFortesttrue" classname="BDDTest" time="0.002"/>
+  <testcase name="rootTest" classname="BDDTest" time="0.03"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[[Thread-14] INFO spark.webserver.JettySparkServer - == Spark has ignited ...
+[Thread-14] INFO spark.webserver.JettySparkServer - >> Listening on 0.0.0.0:4567
+[Thread-14] INFO org.eclipse.jetty.server.Server - jetty-9.3.2.v20150730
+[Thread-14] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@ea59140{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Thread-14] INFO org.eclipse.jetty.server.Server - Started @3112ms
+Apr 22, 2016 4:25:44 PM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "type", creating a text input
+Apr 22, 2016 4:25:44 PM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "type", creating a text input
+[Test worker] INFO spark.webserver.JettySparkServer - >>> Spark shutting down ...
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@ea59140{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Test worker] INFO spark.webserver.JettySparkServer - done
+]]></system-err>
 </testsuite>

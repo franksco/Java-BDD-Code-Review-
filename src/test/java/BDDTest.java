@@ -1,8 +1,38 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 import java.util.ArrayList;
+import org.fluentlenium.adapter.FluentTest;
+import org.junit.ClassRule;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-public class BDDTest {
+import static org.assertj.core.api.Assertions.assertThat;
+
+public class BDDTest extends FluentTest {
+  public WebDriver webDriver = new HtmlUnitDriver();
+
+  @Override
+  public WebDriver getDefaultDriver() {
+    return webDriver;
+  }
+
+  @ClassRule
+  public static ServerRule server = new ServerRule();
+
+  @Test
+  public void rootTest() {
+    goTo("http://localhost:4567/");
+    assertThat(pageSource()).contains("Word Puzzle");
+  }
+
+  @Test
+  public void isALeapYear() {
+  goTo("http://localhost:4567");
+  fill("#sentence").with("hey");
+  submit(".btn");
+  assertThat(pageSource()).contains("h-y");
+  }
 
   @Test
   public void replacement_TestForA() {
