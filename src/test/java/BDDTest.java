@@ -6,7 +6,6 @@ import org.junit.ClassRule;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class BDDTest extends FluentTest {
@@ -27,11 +26,19 @@ public class BDDTest extends FluentTest {
   }
 
   @Test
-  public void isALeapYear() {
+  public void check_Replacement() {
   goTo("http://localhost:4567");
   fill("#sentence").with("hey");
   submit(".btn");
   assertThat(pageSource()).contains("h-y");
+  }
+
+  @Test
+  public void check_Replacement_ToUpperCase() {
+  goTo("http://localhost:4567");
+  fill("#sentence").with("BILLY GOAT");
+  submit(".btn");
+  assertThat(pageSource()).contains("B-LLY G--T");
   }
 
   @Test
@@ -67,6 +74,14 @@ public class BDDTest extends FluentTest {
     BDD yourApp = new BDD();
     String expected = "-v-rb--rd";
     assertEquals(expected, yourApp.replaceLetter("overboard"));
+  }
+
+  @Test
+  public void toUpperCase_Test() {
+    BDD yourApp = new BDD();
+    String expected = "awesome";
+    assertEquals(expected,
+    yourApp.setLowerCase("AWESOME"));
   }
 
   @Test
