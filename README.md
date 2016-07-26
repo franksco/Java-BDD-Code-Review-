@@ -1,13 +1,14 @@
-{Ping Pong Numbers Game}
-{enter in a word or sentence and the vowels are replaced with a "-"}, {4/22/2016}
+# Word Code Game
 
-By {Cory Franks}
+#### Similar to ping-pong but with words.
 
-Description
+#### By Cory Franks on 4/22/2016
 
-{Enter in any word or sentence and any vowels that are in said word/sentence will be replaced with a "-" }
+## Description
 
-Setup/Installation Requirements
+Enter in any word or sentence and any vowels that are in said word/sentence will be replaced with a "-" 
+
+## Setup/Installation Requirements
 
 make a file
 clone repository
@@ -16,20 +17,27 @@ after running gradle open up browser of choice (tested on safari and chrome)
 type in localhost:4567/
 enter a word/sentence and have fun
 
-Known Bugs
+## Known Bugs
 
-{None as of this time. }
+None as of this time.
 
-Support and contact details
+## Support and contact details
 
-{You can contact Cory Franks at franksco39@gmail.com.}
+You can contact Cory Franks at franksco39@gmail.com.
 
-Technologies Used
+## Technologies Used
 
-{Java, Spark, gradle, velocity, fluentlenium, bootstrap, atom, and github .}
+* Java
+* Spark
+* Gradle 
+* Velocity 
+* Fluentlenium 
+* Bootstrap 
+* Atom
+* Github
 
-License
+## License
 
-{This is licensed under the MIT license.}
+This is licensed under the MIT license.
 
-Copyright (c) 2016 {Cory Franks}
+Copyright (c) 2016 Cory Franks
